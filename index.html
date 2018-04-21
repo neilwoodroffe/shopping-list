@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <style>
 body{
-max-width: 480px;
+max-width: 310px;
 margin: 0 auto !important;
 float: none !important;
 }
@@ -22,7 +22,7 @@ h1 {text-align: center;}
 .remove {
     display: block; 
 
-    margin-left:360px; 
+    margin-left:250px; 
     margin-right:10px;
     margin-top: -20px;
     margin-bottom: 5px;
@@ -43,12 +43,13 @@ li {
   border-color: lightgrey;
 
 }
+
 </style
 
 </head>
 <body>
 <h1>Shopping List</h1>
-<input type="text" list="groceries" id="task" placeholder="Add Item" onfocus="this.value=''"><button id="add">Add</button>
+<input type="text" list="groceries" id="task" placeholder="Add Item" onfocus="this.value=''"><button id="add">+</button>
 <datalist id="groceries">
     <option value="apples">apples</option>
     <option value="bananas">bananas</option>
@@ -104,7 +105,7 @@ li {
      
         var html = '<ul>';
         for(var i=0; i<todos.length; i++) {
-            html += '<li>' + '&nbsp&nbsp&nbsp<input type="checkbox">&nbsp&nbsp&nbsp' + todos[i] + '<button class="remove" id="' + i  + '">remove</button></li>';
+            html += '<li>' + '&nbsp&nbsp&nbsp<input type="checkbox">&nbsp&nbsp&nbsp' + todos[i] + '<button class="remove" id="' + i  + '">-</button></li>';
         };
         html += '</ul>';
      
