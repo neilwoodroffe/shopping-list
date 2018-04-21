@@ -21,8 +21,8 @@ h1 {text-align: center;}
 
 .remove {
     display: block; 
-
-    margin-left:230px; 
+    padding: 1px 10px;
+    margin-left:240px; 
     margin-right:10px;
     margin-top: -20px;
     margin-bottom: 5px;
@@ -52,7 +52,7 @@ li {
 <div class="input-group">
       <input type="text" list="groceries" id="task" class="form-control" placeholder="Add Item" onfocus="this.value=''">
       <span class="input-group-btn">
-        <button id="add" class="btn btn btn-outline-secondary" type="button">+</button>
+        <button id="add" class="btn btn-outline-secondary" type="button">+</button>
       </span>
 </div>
 <!--div><input type="text" list="groceries" id="task" placeholder="Add Item" onfocus="this.value=''"><button id="add">+</button></input></div-->
@@ -111,7 +111,7 @@ li {
      
         var html = '<ul>';
         for(var i=0; i<todos.length; i++) {
-            html += '<li>' + '&nbsp&nbsp&nbsp<input type="checkbox">&nbsp&nbsp&nbsp' + todos[i] + '<button class="remove" id="' + i  + '">-</button></li>';
+            html += '<li>' + '&nbsp&nbsp&nbsp<input type="checkbox">&nbsp&nbsp&nbsp' + todos[i] + '<button class="remove btn btn-outline-secondary" id="' + i  + '">-</button></li>';
         };
         html += '</ul>';
      
