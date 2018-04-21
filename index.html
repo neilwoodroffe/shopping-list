@@ -31,8 +31,8 @@ h1 {text-align: center;}
 ul {
   list-style-type: none;
   padding-left:0px;
-  margin-left:10px;
-  margin-right:10px;
+  margin-left:5px;
+  margin-right:5px;
   border-style: solid;
   border-width: 1px;
   border-color: lightgrey;
@@ -49,7 +49,7 @@ li {
 </head>
 <body>
 <h1>Shopping List</h1>
-<input type="text" list="groceries" id="task" placeholder="Add Item" onfocus="this.value=''"><button id="add">+</button>
+<div><input type="text" list="groceries" id="task" placeholder="Add Item" onfocus="this.value=''"><button id="add">+</button></input></div>
 <datalist id="groceries">
     <option value="apples">apples</option>
     <option value="bananas">bananas</option>
