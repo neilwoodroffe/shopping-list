@@ -14,8 +14,8 @@ float: none !important;
 h1 {text-align: center;}
 #task {
     width: 230px;
-    margin-left:10px;
-    margin-right:10px;
+    margin-left:5px;
+    margin-right:5px;
 
 }
 
@@ -49,7 +49,13 @@ li {
 </head>
 <body>
 <h1>Shopping List</h1>
-<div><input type="text" list="groceries" id="task" placeholder="Add Item" onfocus="this.value=''"><button id="add">+</button></input></div>
+<div class="input-group">
+      <input type="text" list="groceries" id="task" class="form-control" placeholder="Add Item" onfocus="this.value=''">
+      <span class="input-group-btn">
+        <button id="add" class="btn btn btn-outline-secondary" type="button">+</button>
+      </span>
+</div>
+<!--div><input type="text" list="groceries" id="task" placeholder="Add Item" onfocus="this.value=''"><button id="add">+</button></input></div-->
 <datalist id="groceries">
     <option value="apples">apples</option>
     <option value="bananas">bananas</option>
